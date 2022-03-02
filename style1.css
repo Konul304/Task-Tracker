@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  width: 1400px;
+
+  margin-top: 91px;
+  margin-left: 124px;
+  margin-right: 150px;
+}
+
+h1 {
+  width: 365px;
+  height: 93px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 101.38%;
+  margin-left: 124px;
+  /* or 56px */
+  color: #000000;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.img1 {
+  width: 314px;
+  height: 315px;
+}
+
+p {
+  width: 662px;
+  height: 374px;
+  margin-left: 124px;
+  margin-top: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+  color: #000000;
+}
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 124px;
+}
+
+.box1 h1,.box2 h1,.box3 h1 {
+  width: 150px;
+  height: 39px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+  color: #000000;
+}
+
+
+.box1,.box2,.box3 {
+  width: 150px;
+  height: 39px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  color: #000000;
+}
+
+.img2 {
+  width: 232px;
+  height: 203px;
+}
+
+@media only screen and (max-width: 830px) {
+  .container {
+      width: 94em;
+    margin-left: 72px;
+   
+  }
+  .img1{
+       margin-right: 86.69px;
+  }
+  .img2 {
+    display: none;
+  }
+  .flex2 {
+    justify-content: flex-start;
+    margin-left: 0px;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    margin-right: 55px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 90vw;
+  }
+  .img2 {
+    display: none;
+  }
+  .flex2 {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    margin-right: 55px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .img1 {
+    margin-left: 101px;
+  }
+}
