@@ -48,7 +48,7 @@ enter.addEventListener('click', (event) => {
             const first = ul.firstChild;
             if (li == first) {
                 console.log("asas")
-                List.display = 'none';
+                List.style.display = 'none';
             }
         })
 
