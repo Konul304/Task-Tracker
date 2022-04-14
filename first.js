@@ -29,14 +29,18 @@ box.insertBefore(List, inputBox);
 
 
 enter.addEventListener('click', (event) => {
-    if (input.value != "") {
+
+    if (input.value != ""  && input.value != " ") {
 
         const li = document.createElement('li');
-        li.textContent = input.value;
+        const newInput = document.createElement('input')
+        newInput.value = input.value;
+        newInput.classList.add('newInput')
         let img = document.createElement('img');
         img.src = "images/Group77.png";
         img.classList.add('clearItem');
 
+        li.append(newInput)
         li.append(img);
         ul.append(li);
         img.style.boxSizing = 'border-box';
@@ -46,13 +50,39 @@ enter.addEventListener('click', (event) => {
         img.addEventListener('click', (e) => {
             li.style.display = 'none';
             const first = ul.firstChild;
-            if (li == first) {
-                console.log("asas")
+            console.log(first)
+            if ( li==ul.firstChild) {
                 List.style.display = 'none';
             }
         })
 
     }
+    else{
+        const li = document.createElement('li');
+        const newInput = document.createElement('input')
+        newInput.value = input.value;
+        newInput.classList.add('newInput')
+        let img = document.createElement('img');
+        img.src = "images/Group77.png";
+        img.classList.add('clearItem');
+
+        li.append(newInput)
+        li.append(img);
+        ul.append(li);
+        img.style.boxSizing = 'border-box';
+        List.style.display = 'block';
+
+        img.addEventListener('click', (e) => {
+            li.style.display = 'none';
+            const first = ul.firstChild;
+            console.log(first)
+            if ( li==ul.firstChild) {
+                List.style.display = 'none';
+            }
+        })
+
+    }
+
 
 })
 

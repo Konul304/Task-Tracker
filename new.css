@@ -12,7 +12,7 @@
     border: 1px solid #C4C4C4;
     border-radius: 10px;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 232px;
     padding-bottom: 19px;
 }
 
@@ -61,6 +61,14 @@ h1 {
     padding-top: 4px;
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+
+.newInput {
+   border-style: hidden;
+}
+
+.newInput:focus{
+    outline: none;
 }
 
 ul {
