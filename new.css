@@ -64,10 +64,10 @@ h1 {
 }
 
 .newInput {
-   border-style: hidden;
+    border-style: hidden;
 }
 
-.newInput:focus{
+.newInput:focus {
     outline: none;
 }
 
@@ -79,7 +79,7 @@ li {
     padding: 10px;
 }
 
-#sorting {
+#sortingIcon {
     padding-left: 84%;
     margin-bottom: 8px;
 }
