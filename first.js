@@ -2,7 +2,6 @@ const clear = document.querySelector('.clear');
 const enter = document.querySelector('#plus_button');
 const input = document.querySelector('input');
 const inputBox = document.querySelector('#inputBox');
-const sorting = document.querySelector('#sorting');
 
 // sorting.addEventListener('click', (event) => {
 
@@ -55,14 +54,45 @@ function createInput() {
     // li.draggable = 'true';
     // li.ondragstart = "event.dataTransfer.setData('text/plain',null)";
     img.addEventListener('click', (e) => {
+        li.firstChild.value = '';
         li.style.display = 'none';
         const first = ul.firstChild;
-        console.log(first)
         if (li == ul.firstChild) {
             List.style.display = 'none';
         }
     })
 }
+
+const sorting = document.querySelector('#sortingIcon');
+
+sorting.addEventListener('mouseover', (e) => {
+    sorting.src = "images/Group73.png";
+})
+
+sorting.addEventListener('mouseout', (e) => {
+    sorting.src = "images/Group74.png";
+})
+
+
+let arr = [];
+
+sorting.addEventListener('click', (event) => {
+    const items = document.getElementsByTagName('li');
+    for (let i = 0; i < items.length; i++) {
+        console.log(items[i])
+        arr.push(items[i].firstChild.value);
+    }
+    console.log(arr)
+    arr.sort();
+    for (let i = 0; i < items.length; i++) {
+        items[i].firstChild.value=arr[i];
+    }
+})
+
+
+
+
+
 //     var dragged;
 //     document.addEventListener("dragstart", function (event) {
 //         dragged = event.target;
