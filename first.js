@@ -3,9 +3,6 @@ const enter = document.querySelector('#plus_button');
 const input = document.querySelector('input');
 const inputBox = document.querySelector('#inputBox');
 
-// sorting.addEventListener('click', (event) => {
-
-// })
 clear.addEventListener('click', (event) => {
     if (input.value != "") {
         input.value = "";
@@ -26,15 +23,9 @@ box.insertBefore(List, inputBox);
 
 enter.addEventListener('click', (event) => {
 
-    if (input.value != "" && input.value != " ") {
-
         createInput();
-        input.value = "";
-    }
-    else {
-        createInput();
-
-    }
+         input.value = "";
+   
 })
 
 function createInput() {
