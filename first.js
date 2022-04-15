@@ -65,30 +65,34 @@ function createInput() {
 
 const sorting = document.querySelector('#sortingIcon');
 
-sorting.addEventListener('mouseover', (e) => {
-    sorting.src = "images/Group73.png";
-})
+if (sorting.src = 'images/Group74.png') {
 
-sorting.addEventListener('mouseout', (e) => {
-    sorting.src = "images/Group74.png";
-})
+    sorting.addEventListener('mouseover', (e) => {
+        sorting.src = "images/Group73.png";
+    })
+
+    sorting.addEventListener('mouseout', (e) => {
+        sorting.src = "images/Group74.png";
+    })
 
 
-let arr = [];
+    let arr = [];
 
-sorting.addEventListener('click', (event) => {
-    const items = document.getElementsByTagName('li');
-    for (let i = 0; i < items.length; i++) {
-        console.log(items[i])
-        arr.push(items[i].firstChild.value);
-    }
-    console.log(arr)
-    arr.sort();
-    for (let i = 0; i < items.length; i++) {
-        items[i].firstChild.value=arr[i];
-    }
-})
+    sorting.addEventListener('click', (event) => {
+        sorting.src = 'images/Group90.png';
+        const items = document.getElementsByTagName('li');
+        for (let i = 0; i < items.length; i++) {
+            console.log(items[i])
+            arr.push(items[i].firstChild.value);
+        }
+        console.log(arr)
+        arr.sort();
+        for (let i = 0; i < items.length; i++) {
+            items[i].firstChild.value = arr[i];
+        }
+    })
 
+}
 
 
 
