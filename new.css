@@ -82,6 +82,11 @@ li {
 #sortingIcon {
     padding-left: 84%;
     margin-bottom: 8px;
+    color: gray;
+}
+
+#sortingIcon:hover {
+    color: black;
 }
 
 #inputBox {

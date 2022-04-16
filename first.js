@@ -2,9 +2,9 @@ const clear = document.querySelector('.clear');
 const enter = document.querySelector('#plus_button');
 const input = document.querySelector('input');
 const inputBox = document.querySelector('#inputBox');
-
 const flex = document.querySelector('#flex');
 const plus = document.querySelector('#plus');
+
 flex.addEventListener('mouseover', (event) => {
     flex.style.backgroundColor = '#9953F1';
     plus.style.backgroundColor = '#AA68FE';
@@ -63,29 +63,12 @@ function createInput() {
     })
 }
 
-const sorting = document.querySelector('#sortingIcon');
-
-sorting.addEventListener('mouseover', (e) => {
-
-    if (sorting.src = "images/Group74.png") {
-        sorting.src = "images/Group73.png";
-    }
-    sorting.addEventListener('mouseout', (e) => {
-        if (sorting.src = "images/Group74.png") {
-            sorting.src = "images/Group74.png";
-        }
-        else {
-            sorting.src = "images/Group90.png";
-        }
-    })
-})
-
 let arr = [];
 let a = 1;
+const sorting = document.getElementById('sortingIcon');
 sorting.addEventListener('click', (event) => {
 
     if (a == 1) {
-        sorting.src = "images/Group90.png";
         const items = document.getElementsByTagName('li');
         for (let i = 0; i < items.length; i++) {
             console.log(items[i])
@@ -99,25 +82,14 @@ sorting.addEventListener('click', (event) => {
     }
 
     else if (a == 0) {
-
-        sorting.src = 'images/Group74.png';
         const items = document.getElementsByTagName('li');
-
         arr.reverse();
         for (let i = 0; i < items.length; i++) {
             items[i].firstChild.value = arr[i];
         }
         a = 1;
     }
-
 })
-
-
-
-
-
-
-
 
 //     var dragged;
 //     document.addEventListener("dragstart", function (event) {
