@@ -64,5 +64,6 @@ Ekranda 3 qeyd var: 5, 4, 3.
 
 Yoxlamanın bütün mərhələlərində konsolda heç bir səhv yoxdur.
 
+![image](https://user-images.githubusercontent.com/68824604/163687031-2372f891-fc03-44cb-95c6-a78ba3dfa00b.png)
 
 
