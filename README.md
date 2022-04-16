@@ -26,6 +26,43 @@ Başlanğıc halında siyahıda bir boş qeyd var.
 Layihə fərdi şəkildə həyata keçirilir. Layihə kodu GitHub-da ayrıca repozitoriyada yerləşməlidir.
 
 Əlavə şərtlər
+
 Tapşırıqlara drag-and-drop qabiliyyətini tətbiq edin.
+
+
+Çeklist
+Şərt
+Bəli/Xeyr
+Proqramı işə salın. Ekranda bir boş giriş sahəsi olan siyahı var.
+
+
+"Əlavə et" düyməsini basırıq. İkinci boş qeyd yaradılır.
+
+
+Daha üç boş qeyd yaradırıq. Klaviaturadan istifadə edərək qeydlərə 3, 2, 1, 4, 5 sıra nömrələrini yazırıq.
+Ekranda hər birində bir rəqəm yazılmış 5 qeyd almalısınız. Qeydlər ardıcıllıqla düzülüb (onları özümüz belə yazmışıq).
+
+
+2 nömrəli qeydin yanındakı "Sil" düyməsini basırıq.
+Ekranda 4 qeyd var: 3, 1, 4, 5.
+
+
+Çeşidlə düyməsini basırıq.
+Ekranda 4 qeyd var: 1, 3, 4, 5.
+
+
+İlk qeydi silirik.
+Ekranda 3 qeyd var: 3, 4, 5.
+
+
+Çeşidlə düyməsini basırıq.
+Ekranda 3 qeyd var: 5, 4, 3.
+
+
+İnteraktiv elementlərin görünüşü və davranışı layout tərtibatına uyğundur.
+
+
+Yoxlamanın bütün mərhələlərində konsolda heç bir səhv yoxdur.
+
 
 
