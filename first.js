@@ -23,9 +23,9 @@ box.insertBefore(List, inputBox);
 
 enter.addEventListener('click', (event) => {
 
-        createInput();
-         input.value = "";
-   
+    createInput();
+    input.value = "";
+
 })
 
 function createInput() {
@@ -45,8 +45,8 @@ function createInput() {
     // li.draggable = 'true';
     // li.ondragstart = "event.dataTransfer.setData('text/plain',null)";
     img.addEventListener('click', (e) => {
-        li.firstChild.value = '';
-        li.style.display = 'none';
+        ul.removeChild(li)
+
         const first = ul.firstChild;
         if (li == ul.firstChild) {
             List.style.display = 'none';
@@ -56,34 +56,59 @@ function createInput() {
 
 const sorting = document.querySelector('#sortingIcon');
 
-if (sorting.src = 'images/Group74.png') {
+sorting.addEventListener('mouseover', (e) => {
 
-    sorting.addEventListener('mouseover', (e) => {
+    if (sorting.src = "images/Group74.png") {
         sorting.src = "images/Group73.png";
-    })
-
+    }
     sorting.addEventListener('mouseout', (e) => {
-        sorting.src = "images/Group74.png";
+        if (sorting.src = "images/Group74.png") {
+            sorting.src = "images/Group74.png";
+        }
+        else {
+            sorting.src = "images/Group90.png";
+        }
     })
+})
 
+let arr = [];
+let a = 1;
+sorting.addEventListener('click', (event) => {
 
-    let arr = [];
-
-    sorting.addEventListener('click', (event) => {
-        sorting.src = 'images/Group90.png';
+    if (a == 1) {
+        sorting.src = "images/Group90.png";
         const items = document.getElementsByTagName('li');
         for (let i = 0; i < items.length; i++) {
             console.log(items[i])
             arr.push(items[i].firstChild.value);
         }
-        console.log(arr)
         arr.sort();
+        console.log(arr)
         for (let i = 0; i < items.length; i++) {
             items[i].firstChild.value = arr[i];
         }
-    })
+        a = 0;
+    }
 
-}
+    else if (a == 0) {
+
+        sorting.src = 'images/Group74.png';
+        const items = document.getElementsByTagName('li');
+
+        console.log('aaa')
+        console.log(arr)
+        arr.reverse();
+        for (let i = 0; i < items.length; i++) {
+            items[i].firstChild.value = arr[i];
+        }
+        a = 1;
+    }
+
+})
+
+
+
+
 
 
 
