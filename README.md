@@ -64,6 +64,18 @@ Ekranda 3 qeyd var: 5, 4, 3.
 
 Yoxlamanın bütün mərhələlərində konsolda heç bir səhv yoxdur.
 
+NETLIFY LINK:https://bespoke-cannoli-b1ad51.netlify.app/
+
+HTML VALIDASIYA:
+
 ![image](https://user-images.githubusercontent.com/68824604/163687031-2372f891-fc03-44cb-95c6-a78ba3dfa00b.png)
+
+
+PAGE SPEED:
+MOBILE
+![image](https://user-images.githubusercontent.com/68824604/163687092-8da67c6e-8162-4254-bbee-3ee4b1433b30.png)
+DESKTOP
+![image](https://user-images.githubusercontent.com/68824604/163687113-be2b87a7-8d9e-4865-976e-50220019c49a.png)
+
 
 
