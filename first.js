@@ -3,6 +3,18 @@ const enter = document.querySelector('#plus_button');
 const input = document.querySelector('input');
 const inputBox = document.querySelector('#inputBox');
 
+const flex = document.querySelector('#flex');
+const plus = document.querySelector('#plus');
+flex.addEventListener('mouseover', (event) => {
+    flex.style.backgroundColor = '#9953F1';
+    plus.style.backgroundColor = '#AA68FE';
+    flex.addEventListener('mouseout', (event) => {
+        flex.style.backgroundColor = '#833AE0';
+        plus.style.backgroundColor = '#9953F1';
+
+    })
+})
+
 clear.addEventListener('click', (event) => {
     if (input.value != "") {
         input.value = "";
@@ -20,9 +32,7 @@ List.append(ul);
 const box = document.querySelector('.box')
 box.insertBefore(List, inputBox);
 
-
 enter.addEventListener('click', (event) => {
-
     createInput();
     input.value = "";
 
@@ -46,7 +56,6 @@ function createInput() {
     // li.ondragstart = "event.dataTransfer.setData('text/plain',null)";
     img.addEventListener('click', (e) => {
         ul.removeChild(li)
-
         const first = ul.firstChild;
         if (li == ul.firstChild) {
             List.style.display = 'none';
@@ -83,7 +92,6 @@ sorting.addEventListener('click', (event) => {
             arr.push(items[i].firstChild.value);
         }
         arr.sort();
-        console.log(arr)
         for (let i = 0; i < items.length; i++) {
             items[i].firstChild.value = arr[i];
         }
@@ -95,8 +103,6 @@ sorting.addEventListener('click', (event) => {
         sorting.src = 'images/Group74.png';
         const items = document.getElementsByTagName('li');
 
-        console.log('aaa')
-        console.log(arr)
         arr.reverse();
         for (let i = 0; i < items.length; i++) {
             items[i].firstChild.value = arr[i];
